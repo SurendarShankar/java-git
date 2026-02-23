@@ -195,3 +195,24 @@ switch(op) {
         System.out.println("Invalid operator");
 }
 ```
+
+## 7.Input currency in rupees and output in USD
+
+```java
+import java.util.Scanner;
+
+public class hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value in RS : ");
+        int Rs = sc.nextInt();
+
+        int result = (Rs/83);
+        System.out.println("The USD value of RS is  : " + result);
+        sc.close();
+
+
+    }
+}
+```
