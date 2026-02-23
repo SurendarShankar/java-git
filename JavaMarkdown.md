@@ -216,3 +216,52 @@ public class hello {
     }
 }
 ```
+
+## 8.To calculate Fibonacci Series up to n numbers
+
+```java
+import java.util.Scanner;
+
+public class hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the n SEries Num :");
+        int n = sc.nextInt();
+        int a = 0;
+        int b = 1;
+        int count = 0;
+
+        while (count<=n) {
+            int temp = b;
+            b = a+b;
+            a = temp;
+            count++;
+        }
+        System.out.println(b);
+        sc.close();
+    }
+}
+```
+
+## 9.To find out whether the given String is Palindrome or not
+
+```java
+import java.util.Scanner;
+
+public class hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+
+        if (a.equals(a)) {
+            System.out.println("It is a palimdrome : " + a);
+        } else {
+            System.out.println("it not a palindrome ");
+        }
+        sc.close();
+
+    }
+}
+```
