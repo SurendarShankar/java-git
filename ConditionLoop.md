@@ -75,3 +75,87 @@ public class ElectricityBill {
     }
 }
 ```
+
+## 4.Calculate Discount Of Product
+
+```java
+import java.util.Scanner;
+
+public class hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Market Price :");
+        int mp = sc.nextInt();
+        System.out.print("Enter the Discount :");
+        int D = sc.nextInt();
+
+        // Calculate the Discount
+        int Discount = ((mp * D) / 100);
+        System.out.println("Discount Amount is:" + Discount);
+
+        // Selling price
+        int sp = mp - Discount;
+        System.out.println("The Selling price :" + sp);
+        sc.close();
+
+    }
+}
+```
+
+## 5.Calculate Distance Between Two Points
+
+```java
+import java.util.Scanner;
+
+public class hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value X1 and x2 :");
+        double x1 = sc.nextDouble();
+        double x2 = sc.nextDouble();
+        System.out.println("Enter the value Y1 and Y2 :");
+        double y1 = sc.nextDouble();
+        double y2 = sc.nextDouble();
+
+        // sub
+        double x = (x1 - x2);
+        double y = (y1 - y2);
+
+        // squar
+        double SquarX = Math.pow(x, 2);
+        double SquarY = Math.pow(y, 2);
+
+        // Squar valu is add
+
+        // double addvalue = SquarX + SquarY;
+        double result = Math.sqrt(SquarX + SquarY);
+        System.out.println("The distance between 2 point is:" + result);
+        sc.close();
+
+    }
+}
+```
+
+## 6.Calculate Commission Percentage
+
+```java
+import java.util.Scanner;
+
+public class hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Commission earned :");
+        double ce = sc.nextDouble();
+        System.out.print("Sales amount  :");
+        double sa = sc.nextDouble();
+        double result = ((ce / sa) * 100);
+
+        System.out.println("the % is :" + result + "%");
+        sc.close();
+
+    }
+}
+```
